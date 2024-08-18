@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.pic_parallax_swiper_lt {position:relative;}
+
+.pic_parallax_swiper_lt [class^=swiper-button-] {
+  transition: all 0.3s ease;
+}
+
+.pic_parallax_swiper_lt .swiper-slide {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.pic_parallax_swiper_lt img,
+.pic_parallax_swiper_lt figure,
+.pic_parallax_swiper_lt div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.pic_parallax_swiper_lt .swiper-container {
+  width: 80%;
+  /*height: 50vh;*/
+  height: 430px;
+  float: left;
+  transition: opacity 0.6s ease, transform 0.3s ease;
+}
+.pic_parallax_swiper_lt .swiper-container.nav-slider {
+  width: 20%;
+  padding-left: 5px;
+}
+.pic_parallax_swiper_lt .swiper-container.nav-slider .swiper-slide {
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.pic_parallax_swiper_lt .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.pic_parallax_swiper_lt .swiper-container.nav-slider .swiper-slide .content {
+  width: 100%;
+}
+.pic_parallax_swiper_lt .swiper-container.nav-slider .swiper-slide .content .title {
+  font-size: 14px;
+}
+.pic_parallax_swiper_lt .swiper-container:hover .swiper-button-prev,
+.pic_parallax_swiper_lt .swiper-container:hover .swiper-button-next {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.pic_parallax_swiper_lt .swiper-container.loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pic_parallax_swiper_lt .swiper-slide {
+  overflow: hidden;
+}
+.pic_parallax_swiper_lt .swiper-slide .slide-bgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.pic_parallax_swiper_lt .swiper-slide .entity-img {
+  display: none;
+}
+.pic_parallax_swiper_lt .swiper-slide .content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 50%;
+  padding-left: 5%;
+  color: #fff;
+}
+.pic_parallax_swiper_lt .swiper-slide .content .title {
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.pic_parallax_swiper_lt .swiper-slide .content .caption {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  transform: translateX(50px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.7s ease;
+}
+.pic_parallax_swiper_lt .swiper-slide .content .caption.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.pic_parallax_swiper_lt [class^=swiper-button-] {
+  width: 44px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pic_parallax_swiper_lt .swiper-button-prev {
+  transform: translateX(50px);
+}
+
+.pic_parallax_swiper_lt .swiper-button-next {
+  transform: translateX(-50px);
+}

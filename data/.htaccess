@@ -1,0 +1,13 @@
+<FilesMatch "\.(htaccess|htpasswd|[Pp][Hh][Pp]|[Pp][Hh][Tt]|[Pp]?[Hh][Tt][Mm][Ll]?|[Ii][Nn][Cc]|[Cc][Gg][Ii]|[Pp][Ll]|[Pp][Hh][Aa][Rr])">
+# Order allow,deny
+# Deny from all
+Require all denied
+</FilesMatch>
+RedirectMatch 403 /session/.*
+
+# 2.2 설정
+# Order deny,allow
+# Deny from all
+
+# 2.4 설정
+# Require all denied

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.pic_partial_lt {position:relative;margin-bottom:20px;background:#fff}
+.pic_partial_lt .lat_title {display:block;line-height:45px;font-size:1.2em;color:#253dbe}
+.pic_partial_lt .lat_title a {color:#000;display:inline-block;position:relative}
+
+.pic_partial_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center;}
+.pic_partial_lt .lt_more:hover {color:#777}
+.pic_partial_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
+.pic_partial_lt ul {margin: 0 -10px}
+.pic_partial_lt li {float:left;width:33.33%;padding:0 10px}
+.pic_partial_lt li.galley_li:nth-child(3n+1) {clear: both!important}
+.pic_partial_lt figcaption h2 { display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+
+.pic_partial_lt .card {
+	display: grid;
+	& > figcaption {display: grid;gap: 1ch;}
+	.no-preference & {
+		border-radius: 25px;overflow: clip;align-items: end;grid-template-rows: 1fr auto;
+		> * {grid-area: 1 / 1;}
+		> img {block-size: 100%;inline-size: 100%;object-fit: cover;}
+		> figcaption {padding: 2ch;padding-block-start: 17ch;color: white;background: linear-gradient(to top, #000, #0000);}
+		> figcaption a {color: white;}
+		> figcaption a:hover {color:#a22121}
+	}
+	.reduced & {
+		gap: 1ch;
+		> a img{border-radius: 25px;block-size: 20ch;object-fit: cover;}
+		> img {border-radius: 25px;block-size: 18ch;object-fit: cover;}
+	}
+}
+.pic_partial_lt {
+    * {box-sizing: border-box;margin: 0;}
+    section {
+        display: grid;gap: 5vmin;
+        > p {text-align: center;}
+    }
+    p {line-height: 1.5;text-wrap: pretty;}
+    h2 {font-size:1.2em;}
+    img {max-width: 100%;}
+}
+
+.pic_partial_lt .empty_li {line-height:145px ;color:#666;text-align:center;padding:0}
+.pic_partial_lt .empty_li:before {background:none;padding:0}
+
+.pic_partial_lt .lt_cmt {background:#e9eff5;color:#3a8afd;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;vertical-align:middle}
+.pic_partial_lt .lt_more {position:absolute;top:11px;right:0;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center}
+.pic_partial_lt .lt_more:hover {color:#777}

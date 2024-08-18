@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#bo_list .wr-num {
+	font-size: 12px; }
+
+/* flyr Video content design
+--------------------------------------------- */
+.plyr-gallery .plyr__control--overlaid {--plyr-color-main: rgba( 255, 255, 255, 0.5 );}
+.plyr-gallery .plyr--video .plyr__control:hover {
+    color: #404040;
+}
+
+.plyr-gallery .is_hover .plyr__controls {
+    margin-bottom: -85px;
+}
+
+.plyr-gallery .is_hover .img-item:hover .plyr__controls,
+.plyr-gallery .is_hover .card-img-top:hover .plyr__controls {
+    margin-bottom: 0;
+	-webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.plyr-gallery .is_hover .plyr--video .plyr__control:hover {
+    color: #404040;
+}
