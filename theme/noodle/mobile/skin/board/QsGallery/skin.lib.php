@@ -1,4 +1,4 @@
-<?
+<?php
 function get_list_thumbnail2($bo_table, $wr_id, $thumb_width, $thumb_height, $is_create=false, $is_crop=true, $crop_mode='center', $is_sharpen=false, $um_value='80/0.5/3')
 {
     global $g5, $config;
@@ -77,4 +77,3 @@ function get_list_thumbnail2($bo_table, $wr_id, $thumb_width, $thumb_height, $is
 
     return $thumb;
 }
-?>
