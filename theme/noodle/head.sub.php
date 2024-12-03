@@ -39,16 +39,16 @@ header("Pragma: no-cache"); // HTTP/1.0
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="title" content="DANCEMUA,댄스무아,무아">
-<meta name="description" content="<?php echo $kiword; ?>">
-<meta name="keywords" content="<?php echo $kiyword; ?>">
+<meta name="description" content="DANCEMUA,댄스무아,무아">
+<meta name="keywords" content="DANCEMUA,댄스무아,무아">
 <meta name="author" content="DANCEMUA,댄스무아,무아">
 <meta name="generator" content="SmarTools Builder for G5/YC5">
 <meta property="og:type" content="website">
 <meta property="og:title" content="DANCEMUA,댄스무아">
-<meta property="og:description" content="<?php echo $kiword; ?>">
+<meta property="og:description" content="DANCEMUA,댄스무아,무아">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DANCEMUA,댄스무아,무아">
-<meta name="twitter:description" content="<?php echo $kiword; ?>">
+<meta name="twitter:description" content="DANCEMUA,댄스무아,무아">
 <?php
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
